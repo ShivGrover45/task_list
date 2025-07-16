@@ -1,4 +1,4 @@
-
+---
 
 ```markdown
 # 📝 Task List API
@@ -93,6 +93,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > Built by [Shiv Grover](https://github.com/ShivGrover45) 💻
-
-
-
