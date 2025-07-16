@@ -1,32 +1,32 @@
+
+
 ---
 
-```markdown
 # 📝 Task List API
 
 A simple Task List backend API built with **Node.js**, **Express**, and **MongoDB** using **Mongoose** for database modeling. This project allows you to create, retrieve, update, and delete tasks — a clean introduction to building REST APIs with MongoDB.
 
 ## 🚀 Features
 
-- Add new tasks  
-- Fetch all tasks  
-- Mark tasks as complete  
-- Delete tasks  
-- Uses MongoDB as the database  
-- Follows a simple MVC structure
+* Add new tasks
+* Fetch all tasks
+* Mark tasks as complete
+* Delete tasks
+* Uses MongoDB as the database
+* Follows a simple MVC structure
 
 ## 🛠️ Tech Stack
 
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Nodemon](https://www.npmjs.com/package/nodemon) for development
+* [Node.js](https://nodejs.org/)
+* [Express.js](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [Nodemon](https://www.npmjs.com/package/nodemon) for development
 
 ## 📂 Project Structure
 
 ```
-
-task\_list/
+task_list/
 │
 ├── model/
 │   └── task.js            # Task schema (Mongoose)
@@ -38,16 +38,16 @@ task\_list/
 ├── index.js               # Main entry point
 ├── package.json           # Project metadata and dependencies
 └── README.md              # Project documentation
-
-````
+```
 
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ShivGrover45/task_list.git
    cd task_list
-````
+   ```
 
 2. **Install dependencies**
 
@@ -86,6 +86,25 @@ task\_list/
 }
 ```
 
+## 🔄 Update a Task (Mark as complete)
+
+```http
+PUT /tasks/<task_id>
+```
+
+```json
+{
+  "completed": true
+}
+```
+
+## 🧹 TODO
+
+* Add authentication
+* Use environment variables for DB URI and port
+* Improve error handling
+* Add testing support
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -93,3 +112,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > Built by [Shiv Grover](https://github.com/ShivGrover45) 💻
+
+---
+
+Let me know if you want a version with `.env` support, Dockerfile, or Postman collection examples too!
